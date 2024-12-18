@@ -23,7 +23,7 @@ export default function About() {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 mb-8">
         <p className="text-gray-400 text-lg">
           안녕하세요 <br />
-          전북대학교 정보보호학과에 재학 중인 임건희입니다.
+          중부대학교 정보보호학과에 재학 중인 임건희입니다.
           <br />
           <br />
           저는 현재 풀스택 개발자를 목표로 공부하고 있으며 <br />

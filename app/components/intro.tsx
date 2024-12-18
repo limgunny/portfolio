@@ -35,7 +35,7 @@ export default function Intro() {
           </span>
         </h1>
         <h2 className="lg:text-3xl text-2xl font-semibold text-white/50 mb-8">
-          전북대학교 @{' '}
+          중부대학교 @{' '}
           <span className="text-sjsu-gold">
             {' '}
             <TypeAnimation
@@ -49,7 +49,7 @@ export default function Intro() {
         </h2>
       </div>
       <div className="text-gray-400 text-lg mb-8 lg:w-[50%] md:w-[65%]">
-        전북대학교에서 정보보호를 전공하고 있으며,
+        중부대학교에서 정보보호를 전공하고 있으며,
         <br /> Next JS를 사용하여 다양한 풀스택 프로젝트들을
         <br /> 설계하고 구축한 경험이 있습니다.
       </div>
