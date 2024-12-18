@@ -2,7 +2,6 @@
 import React from 'react'
 import { Resend } from 'resend'
 import ContactFormEmail from '../components/contact-form-email'
-import toast from 'react-hot-toast'
 
 const resend = new Resend('re_4c81ThRL_8mccaaozWmJqKfBMDwGCmhJT')
 resend.emails.send({
