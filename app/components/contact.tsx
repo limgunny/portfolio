@@ -7,7 +7,6 @@ import { sendEmail } from '../functions/send-email'
 import { FaPaperPlane } from 'react-icons/fa6'
 import SubmitButton from './ui/submit-button'
 import { useSectionInView } from '../lib/hooks'
-import { motion } from 'framer-motion'
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact', 0.5)
@@ -17,12 +16,7 @@ export default function Contact() {
       <Header animateOpacity className="text-center">
         E-mail
       </Header>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.5 }}
-      >
+      <div>
         <p className="text-center lg:px-48 md:px-32 sm:px-12 text-lg text-gray-400">
           방문해주셔서 감사합니다! <br />
           포트폴리오에 관해 궁금한 점이 있으신 분께서는 <br />
@@ -71,7 +65,7 @@ export default function Contact() {
             <FaPaperPlane className="group-hover:translate-x-1 group-hover:transform group-hover:-translate-y-1 transition-transform" />
           </SubmitButton>
         </form>
-      </motion.div>
+      </div>
     </section>
   )
 }

@@ -1,5 +1,4 @@
 'use client'
-import { motion } from 'framer-motion'
 import { socials } from '../lib/data'
 import { useSectionInView } from '../lib/hooks'
 import { RiDownloadLine } from 'react-icons/ri'
@@ -25,12 +24,7 @@ export default function Intro() {
 
   return (
     <section ref={ref} id="home" className="scroll-mt-24 mb-24">
-      <motion.div
-        initial={{ opacity: 0, x: -25 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 0.5 }}
-        viewport={{ once: true }}
-      >
+      <div>
         <h1 className="md:text-2xl text-xl sm:mb-6 mb-3 font-light tracking-wider text-gray-400">
           Portfoilio<span className="wave">👋</span>
         </h1>
@@ -41,16 +35,11 @@ export default function Intro() {
           </span>
         </h1>
         <h2 className="lg:text-3xl text-2xl font-semibold text-white/50 mb-8">
-          중부대학교 @{' '}
+          전북대학교 @{' '}
           <span className="text-sjsu-gold">
             {' '}
             <TypeAnimation
-              sequence={[
-                '정보보호학과' as const,
-                2000 as const,
-                '9184333' as const,
-                2000 as const,
-              ]}
+              sequence={['정보보호학과', 2000, '9184333', 2000]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
@@ -58,29 +47,18 @@ export default function Intro() {
             />
           </span>
         </h2>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: -25 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 0.75 }}
-        viewport={{ once: true }}
-        className="text-gray-400 text-lg mb-8 lg:w-[50%] md:w-[65%]"
-      >
-        중부대학교에서 정보보호를 전공하고 있으며,
+      </div>
+      <div className="text-gray-400 text-lg mb-8 lg:w-[50%] md:w-[65%]">
+        전북대학교에서 정보보호를 전공하고 있으며,
         <br /> Next JS를 사용하여 다양한 풀스택 프로젝트들을
         <br /> 설계하고 구축한 경험이 있습니다.
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: -25 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4, delay: 1 }}
-        viewport={{ once: true }}
-      >
+      </div>
+      <div>
         <Button href="/resume.pdf" className="md:text-lg group">
           Resume
           <RiDownloadLine className="transition-transform group-hover:translate-y-1" />
         </Button>
-      </motion.div>
+      </div>
     </section>
   )
 }
